@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey form</title>
+        <style>
+            #body{
+                background-color:cadetblue;
+            }
+            #title{
+                color:darkblue;
+                text-align: center;
+            }
+            
+            #description{
+                text-align: center;
+            }
+
+            #survey-form{
+                
+                background-color: aliceblue;
+                margin-left: 200px;
+                margin-right: 200px;
+                margin-top: -100px;
+                margin-bottom: 10px;
+                border-radius: 10px;
+                
+            }
+
+             #number,#name,#email,#dropdown,#like,#text-area{
+                 width: 150%;
+                 margin:5px;
+                 padding:6px;
+             }
+            
+            #submit{
+                background-color:cornflowerblue;
+                padding:10px;
+                display: inline-block;
+                font-size: 16px;
+                font-style:initial;
+                border: none;
+                border-radius: 5px;
+                
+                
+            }
+         
+
+        </style>
+    </head>
+    <body id="body">
+        <h1 id="title">Survey Form</h1>
+            <p id="description">Let us know your comments/feedback on our product</p>
+                <form id="survey-form" action="" method="post">
+                   
+                    <table align="center" style="margin-top: -120px">
+              <label id="name-label">
+               <tr><td align="right">* Name: </td> <td><input id="name" type="text" placeholder="Enter your name" required></td></tr></label> <br>
+              <label id="email-label">
+                    <tr><td align="right"> * Email:</td>   <td><input id="email" type="email" required placeholder="Enter your email"></td></tr></label> <br>
+              <label id="number-label">
+                    <tr><td align="right"> * Age: </td>  <td><input id="number" type="number" required placeholder="Enter your Age" min="10"max="40"></td></tr></label><br>
+                    <tr><td align="right">Describe your role: </td> <td><select name="roles" id="dropdown">
+                    <option value="student">student</option>
+                    <option value="parttime job">parttime job</option>
+                    <option value="fulltime job">fulltime job</option>
+                </select></td></tr><br>
+                <tr><td align="right">Recommandation:</td> <td><input type="radio" name="name"value="definetly">Definetly</td></tr><br>
+                <tr><td></td>    <td><input type="radio" name="name"value="May be">May be</td></tr><br>
+                <tr><td></td>     <td><input type="radio" name="name" value="Not sure"> Not sure</td></tr><br>
+                <tr><td align="right">What do you like in FCC:</td> <td><select name="like" id="like">
+                                <option value="challenges">challenges</option>
+                                <option value="forum">forum</option>
+                                <option value="community">community</option>
+                            </select></td></tr><br>
+                <tr><td align="right">Things to be improved:</td><td><input type="checkbox" name="Frontend" value="Frontend"> Frontend</td></tr><br></tr>
+                <tr><td></td>    <td><input type="checkbox" name="backend"value="Backend" > backend</td></tr><br>
+                <tr><td></td>    <td><input type="checkbox" name="Video"value="video" > video</td></tr><br>
+                <tr><td></td>    <td><input type="checkbox" name="forum" value="forum"> forum</td></tr><br>
+                <tr><td align="right">Additional comments:</td>
+                <td><textarea name="message" rows="10" cols="10" id="text-area"placeholder="Enter your comments">
+                    </textarea></td></tr><br>
+                    <tr><td></td><td><button id="submit"  > Submit</td></tr>
+                        </table>
+                   
+            </form>
+        
+      
+
+</body>
+</html>
